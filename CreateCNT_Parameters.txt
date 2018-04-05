@@ -1,0 +1,25 @@
+##Parameters
+# number of condition
+cond = 4
+
+# number of region
+region = 5
+
+# column index of the each region from 1 to the last one(Actual column number)
+reg = [2,3,4,6,7]
+
+# this is binary value for when there are multiple column for a region which would be used in some conditions and not all
+# 1 means there are more than one column for one or more regions, 0 means each region will only have 1 column
+mreg = 1
+
+#a list of regions numbers which will have multiple column in the csv file
+#if there are more than one region that has multiple column it needs to be specified by number of the region
+#for example if region 2 and 4 have multiple columns depending on the condition, the list should be like this: [2,4]
+# if mreg is equal to 1, the script would need to know for each region that are in nreg list, what column should be used
+# for each condition. 
+# for example it will ask "Condition 1 column for region 2?". this question will be repeated for each condition and each region
+# that are listed. So if there are 4 conditions in the experiment and 2 regions are listed in nreg, a total of 8 question
+# need to be answered
+nreg = [5]
+
+
